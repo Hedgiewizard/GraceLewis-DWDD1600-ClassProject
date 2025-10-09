@@ -7,4 +7,33 @@
 /* footer */
 
 /* needs to have
-- */
+- A Google font has been linked in the head of your document
+-A CSS font-family property is present in the CSS file
+-At least two different font weights are used
+-At least two different font sizes are used
+-Styling for the body tag is present
+-Styling for the heading 1 tag is present
+-Styling for the heading 2 tag is present
+-Styling for the paragraph tag is present
+-Styling for the navigation tag is present
+-Change the bullet type for a list
+-Use padding and margin to style the lists
+-Style the definition list
+-Style a border using (color, type, thickness)
+-Add a border radius
+-Flexbox is used to display menu items horizontally
+-Default navigation link underline has been removed
+-Insure menu items are at least 48 px tall
+-Insure way-finding is working
+-CSS incudes a hover state for the anchors
+-Background color used
+-Color used
+-CSS passes a validator
+-HTML passes a validator
+*/
+
+/* Completed / Has 
+-Include CSS comments in your style sheet
+
+
+*/
