@@ -1,6 +1,8 @@
 /* All */
 body{
     font-family: "Oxygen", sans-serif;
+    background-color: #ffedcd;
+    color: #022326;
 }
 
 /* header */
@@ -8,9 +10,17 @@ header{
     display: flex;
 }
 
+.tagline{
+    font-size: 1rem;
+}
+
+.headAndNav{
+    display: flex;
+}
+
 /* nav */
 nav{
-    justify-content: center;
+    justify-content: right;
 }
 
 nav ul{
@@ -20,14 +30,61 @@ nav ul{
 nav ul li{
     list-style: none;
     padding: 1rem;
+    font-weight: 300;
+}
+
+nav ul li:hover{
+    font-weight: 400;
 }
 
 /* main */
-.sugestionsButtonsGroup, .galleryBoxesBox{
-    display: flex;
+.pageNav{
+    text-align: center;
 }
 
+.sugestionsButtonsGroup, .galleryBoxesBox{
+    display: flex;
+    text-align: center;
+}
+
+.sugestionsButtonsGroup{
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.sugestionsButton{
+    padding: 1rem;
+    margin: 0.55rem 1.25rem;
+    background-color: #285059;
+    color: #ececec;
+}
+
+.sugestionsButton a{
+    color: #ececec;
+    text-decoration: none;
+}
+
+h1{
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 700;
+    padding: 0;
+    margin: 1rem;
+}
+
+.pageNav h2{
+    padding: 0;
+    margin: 0;
+}
+
+
+
 /* footer */
+footer{
+    text-align: center;
+    padding-top: 3rem;
+}
 
 
 
@@ -37,21 +94,15 @@ nav ul li{
 
 
 /* needs to have
--At least two different font weights are used
--At least two different font sizes are used
 -Styling for the body tag is present
--Styling for the heading 1 tag is present
 -Styling for the heading 2 tag is present
 -Styling for the paragraph tag is present
--Styling for the navigation tag is present
 -Use padding and margin to style the lists
 -Style the definition list
--Style a border using (color, type, thickness)
 -Add a border radius
 -Default navigation link underline has been removed
 -Insure menu items are at least 48 px tall
 -Insure way-finding is working
--CSS incudes a hover state for the anchors
 -Background color used
 -Color used
 -CSS passes a validator
@@ -64,5 +115,10 @@ nav ul li{
 -A CSS font-family property is present in the CSS file
 -Change the bullet type for a list
 -Flexbox is used to display menu items horizontally
-
+-Styling for the heading 1 tag is present
+-CSS incudes a hover state for the anchors
+-Styling for the navigation tag is present
+-At least two different font weights are used
+-At least two different font sizes are used
+-Style a border using (color, type, thickness)
 */

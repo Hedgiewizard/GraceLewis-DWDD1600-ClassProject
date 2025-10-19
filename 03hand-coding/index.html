@@ -15,21 +15,23 @@
     <title>SirCooksALot - Home</title>
 </head>
 <body>
-    <!-- start the page head -->
-    <header>
-        <span>SirCooksALot</span>
-        <h2>From our Kitchen to yours</h2>
-    </header>
-    <!-- start the nav tab -->
-    <nav>
-        <ul>
-            <li><a href="index.html">Gallery</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="helpfulTips.html">Helpful Tips</a></li>
-            <!-- will get deleated later when we have a good way to link it -->
-            <li><a href="foodPages/index.html">Recipe Outline</a></li>
-        </ul>
-    </nav>
+    <div class="headAndNav">
+        <!-- start the page head -->
+        <header>
+            <p>SirCooksALot</p>
+            <h2 class="tagline">From our Kitchen to yours</h2>
+        </header>
+        <!-- start the nav tab -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="helpfulTips.html">Helpful Tips</a></li>
+                <!-- will get deleated later when we have a good way to link it -->
+                <li><a href="foodPages/index.html">Recipe Outline</a></li>
+            </ul>
+        </nav>
+    </div>
     <!-- start the main content -->
     <!-- Start of the main -->
     <main>
@@ -43,15 +45,16 @@
                 <p class="sugestionsButton"><a href="#QuickMealBox">Quick Meals</a></p>
             </div>
         </div>
-        <!-- Dinners -->
-        <div id="dinnerBox" class="sugestionSection">
-            <h2>Go to Dinners</h2>
-            <div class="galleryBoxesBox"> <!--See if I can have these be filler for a bit while I get the info from my dad so these can link somewhere-->
-                <div class="galleryBox"><a href="/WebsiteAssignmet/recipeOutline.html">
+        <div class="typeOfMeal">
+            <!-- Dinners -->
+            <div id="dinnerBox" class="sugestionSection">
+                <h2>Go to Dinners</h2>
+                <div class="galleryBoxesBox"> <!--See if I can have these be filler for a bit while I get the info from my dad so these can link somewhere-->
+                    <div class="galleryBox"><a href="/WebsiteAssignmet/recipeOutline.html">
                     <!--The Label tag might be easier to use here. I don't know yet though-->
-                    <img src="/images/placeholderImages/RecipePlaceholder.png" class="galleryBoxImage" alt="">
-                    <label class="dishLabel">Katsudon Japanese Pork</label>
-                </a>
+                        <img src="/images/placeholderImages/RecipePlaceholder.png" class="galleryBoxImage" alt="">
+                        <label class="dishLabel">Katsudon Japanese Pork</label>
+                    </a>
                 </div>
                 <div class="galleryBox"> <!--The Label tag might be easier to use here. I don't know yet though-->
                     <img src="/images/placeholderImages/RecipePlaceholder.png" class="galleryBoxImage" alt="">
@@ -156,6 +159,7 @@
             </div>
             <!-- <p class="galleryMore">More...</p>  -->
             <!--Probably will either need to learn how to make that more button work or get rid of it-->
+        </div>
         </div>
     </main>
     <!-- Start the page footer -->
