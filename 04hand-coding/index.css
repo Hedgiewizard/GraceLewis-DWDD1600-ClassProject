@@ -33,6 +33,10 @@ nav ul li{
     font-weight: 300;
 }
 
+nav ul li a{
+    text-decoration: none;
+}
+
 nav ul li:hover{
     font-weight: 400;
 }
@@ -79,17 +83,26 @@ h1{
 }
 
 .galleryBox{
-    display: flex;
+    /* display: flex; */
     justify-content: center;
+    margin: 0 2rem;
+    
+    border-radius: 10px;
+    border: 1px solid #024873;
+    width: 150px;
 }
 
-.katsudonPork{
+.katsudonPork, .dishPlaceholder{
     display: flex;
 }
 
 .galleryBoxImage{
     height: 8rem;
     width: auto;
+}
+
+dl{
+    padding: .5rem 3rem;
 }
 
 /* footer */
@@ -109,12 +122,8 @@ footer{
 -Styling for the body tag is present
 -Styling for the heading 2 tag is present
 -Styling for the paragraph tag is present
--Style the definition list
--Add a border radius
--Default navigation link underline has been removed
 -Insure menu items are at least 48 px tall
 -Insure way-finding is working
--Background color used
 -Color used
 -CSS passes a validator
 -HTML passes a validator
@@ -133,4 +142,8 @@ footer{
 -At least two different font sizes are used
 -Style a border using (color, type, thickness)
 -Use padding and margin to style the lists
+-Add a border radius
+-Default navigation link underline has been removed
+-Background color used
+-Style the definition list
 */
