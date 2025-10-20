@@ -78,7 +78,19 @@ h1{
     margin: 0;
 }
 
+.galleryBox{
+    display: flex;
+    justify-content: center;
+}
 
+.katsudonPork{
+    display: flex;
+}
+
+.galleryBoxImage{
+    height: 8rem;
+    width: auto;
+}
 
 /* footer */
 footer{
@@ -97,7 +109,6 @@ footer{
 -Styling for the body tag is present
 -Styling for the heading 2 tag is present
 -Styling for the paragraph tag is present
--Use padding and margin to style the lists
 -Style the definition list
 -Add a border radius
 -Default navigation link underline has been removed
@@ -121,4 +132,5 @@ footer{
 -At least two different font weights are used
 -At least two different font sizes are used
 -Style a border using (color, type, thickness)
+-Use padding and margin to style the lists
 */
