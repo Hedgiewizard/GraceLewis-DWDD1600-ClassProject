@@ -49,6 +49,7 @@ nav ul li:hover{
 .sugestionsButtonsGroup, .galleryBoxesBox{
     display: flex;
     text-align: center;
+    margin: auto;
 }
 
 .sugestionsButtonsGroup{
@@ -80,6 +81,10 @@ h1{
 .pageNav h2{
     padding: 0;
     margin: 0;
+}
+
+.galleryBoxesBox{
+    margin: auto;
 }
 
 .galleryBox{
