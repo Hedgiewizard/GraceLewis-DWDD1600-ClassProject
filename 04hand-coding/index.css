@@ -78,6 +78,12 @@ h1{
     margin: 1rem;
 }
 
+h2{
+    size: 2.5rem;
+    font-weight: 400;
+    padding-top: 2rem;
+}
+
 .pageNav h2{
     padding: 0;
     margin: 0;
@@ -106,7 +112,7 @@ h1{
     width: auto;
 }
 
-dl{
+dl, p{
     padding: .5rem 3rem;
 }
 
@@ -124,17 +130,18 @@ footer{
 
 
 /* needs to have
--Styling for the body tag is present
--Styling for the heading 2 tag is present
--Styling for the paragraph tag is present
 -Insure menu items are at least 48 px tall
+-Styling for the navigation tag is present
 -Insure way-finding is working
--Color used
 -CSS passes a validator
 -HTML passes a validator
 */
 
 /* Completed / Has 
+-Styling for the heading 2 tag is present
+-Color used
+-Styling for the paragraph tag is present
+-Styling for the body tag is present
 -Include CSS comments in your style sheet
 - A Google font has been linked in the head of your document
 -A CSS font-family property is present in the CSS file
@@ -142,7 +149,6 @@ footer{
 -Flexbox is used to display menu items horizontally
 -Styling for the heading 1 tag is present
 -CSS incudes a hover state for the anchors
--Styling for the navigation tag is present
 -At least two different font weights are used
 -At least two different font sizes are used
 -Style a border using (color, type, thickness)
