@@ -3,11 +3,28 @@ body{
     font-family: "Oxygen", sans-serif;
     background-color: #ffedcd;
     color: #022326;
+    margin: 0;
 }
 
 /* header */
+.headAndNav{
+    background-color: #8c613b;
+    margin: 0;
+    color: #022326;
+    align-items: center;
+    height: 85px;
+    padding: 0 2.5rem;
+}
+
 header{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 4rem;
+}
+
+span{
+    padding-right: 1rem;
 }
 
 .tagline{
@@ -29,12 +46,18 @@ nav ul{
 
 nav ul li{
     list-style: none;
+    font-size: 1.15rem;
     padding: 1rem;
     font-weight: 300;
 }
 
 nav ul li a{
     text-decoration: none;
+    color: #022326;
+}
+
+nav ul li .currentPage{
+    color: #205059;
 }
 
 nav ul li:hover{
@@ -130,14 +153,14 @@ footer{
 
 
 /* needs to have
--Insure menu items are at least 48 px tall
--Styling for the navigation tag is present
--Insure way-finding is working
 -CSS passes a validator
 -HTML passes a validator
 */
 
 /* Completed / Has 
+-Insure way-finding is working
+-Insure menu items are at least 48 px tall
+-Styling for the navigation tag is present
 -Styling for the heading 2 tag is present
 -Color used
 -Styling for the paragraph tag is present
