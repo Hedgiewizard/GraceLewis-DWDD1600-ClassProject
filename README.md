@@ -3,6 +3,8 @@
 notes for me
 -The link for code by yourself github page
     -https://hedgiewizard.github.io/dwdd1600/
+-Formatted link to make auto grading easier
+    -https://hedgiewizard.github.io/dwdd1600/00hand-coding
 -Web Essentials Syllabus Page
     -https://dgmuvu.com/dgmcourses/dwdd1600/
 -Validators he uses
