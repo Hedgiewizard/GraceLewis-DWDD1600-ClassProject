@@ -11,3 +11,8 @@ notes for me
     - HTML: https://validator.w3.org/ 
     - CSS: https://jigsaw.w3.org/css-validator/ 
     - Image Website Speed: https://tools.pingdom.com/ 
+
+
+Notes from the assignments that would be nice to keep
+-Good site for making Favicons
+    -https://favicon.io/
