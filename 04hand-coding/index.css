@@ -33,11 +33,11 @@ span{
 
 .headAndNav{
     display: flex;
+    justify-content: space-between;
 }
 
 /* nav */
 nav{
-    justify-content: right;
 }
 
 nav ul{
@@ -56,8 +56,10 @@ nav ul li a{
     color: #022326;
 }
 
-nav ul li .currentPage{
-    color: #205059;
+.active{
+    background-color: #022326;
+    color: #8c613b;
+    height: 2rem;
 }
 
 nav ul li:hover{
@@ -120,9 +122,6 @@ h2{
     /* display: flex; */
     justify-content: center;
     margin: 0 2rem;
-    
-    border-radius: 10px;
-    border: 1px solid #024873;
     width: 150px;
 }
 
@@ -131,7 +130,7 @@ h2{
 }
 
 .galleryBoxImage{
-    height: 8rem;
+    height: 10rem;
     width: auto;
 }
 
