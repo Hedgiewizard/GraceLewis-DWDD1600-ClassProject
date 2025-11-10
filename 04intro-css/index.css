@@ -1,8 +1,5 @@
 /* All */
 body{
-    background-color: red;
-}
-body{
     font-family: "Montserrat", sans-serif;
     background-color: #ffedcd;
     color: #022326;
@@ -10,19 +7,8 @@ body{
 }
 
 /* header */
-.headAndNav{
-    background-color: #8c613b;
-    margin: 0;
-    color: #022326;
-    align-items: center;
-    height: 85px;
-    padding: 0 2.5rem;
-}
-
 header{
     display: flex;
-    justify-content: center;
-    align-items: center;
     padding-right: 4rem;
 }
 
@@ -34,37 +20,39 @@ span{
     font-size: 1rem;
 }
 
-.headAndNav{
-    display: flex;
-    justify-content: space-between;
-}
-
 /* nav */
+nav{
+    background-color: #8c613b;
+    /* 
+    color: #022326;
+    align-items: center;
+    height: 85px;
+    padding: 0 2.5rem; */
+}
 
 nav ul{
     display: flex;
+    margin: 0;
+    list-style: none;
+    padding: 0 2.5rem;
 }
 
-nav ul li{
-    list-style: none;
+nav a{
+    display: block;
+    text-decoration: none;
+    color: #022326;
     font-size: 1.15rem;
-    padding: 1rem;
+    padding: 1rem 1.5rem;
     font-weight: 300;
 }
 
-nav ul li a{
-    text-decoration: none;
-    color: #022326;
+nav li a:hover{
+    color: white;
 }
 
-.active{
+nav li.active a{
     background-color: #022326;
     color: #8c613b;
-    height: 2rem;
-}
-
-nav ul li:hover{
-    font-weight: 400;
 }
 
 /* main */
