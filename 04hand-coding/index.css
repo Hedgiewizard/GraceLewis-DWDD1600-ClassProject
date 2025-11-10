@@ -1,6 +1,9 @@
 /* All */
 body{
-    font-family: "Oxygen", sans-serif;
+    background-color: red;
+}
+body{
+    font-family: "Montserrat", sans-serif;
     background-color: #ffedcd;
     color: #022326;
     margin: 0;
@@ -37,8 +40,6 @@ span{
 }
 
 /* nav */
-nav{
-}
 
 nav ul{
     display: flex;
