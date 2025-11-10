@@ -1,7 +1,7 @@
 /* All */
 body{
     font-family: "Montserrat", sans-serif;
-    background-color: #ffedcd;
+    background-color: #fff3de;
     color: #022326;
     margin: 0;
 }
@@ -12,8 +12,8 @@ header{
     padding-right: 4rem;
 }
 
-span{
-    padding-right: 1rem;
+header span{
+    padding: 1rem;
 }
 
 .tagline{
