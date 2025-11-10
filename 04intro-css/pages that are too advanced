@@ -1,3 +1,5 @@
+Original index has images that I'm going to have to take out
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -72,8 +74,6 @@
                     <label class="dishLabel">Dish Label</label>
                 </div>
             </div>
-            <!-- <p class="galleryMore">More...</p>  -->
-            <!--Probably will either need to learn how to make that more button work or get rid of it-->
         </div>
         <!-- Breakfast -->
         <div id="breakfastBox" class="sugestionSection">
@@ -100,8 +100,6 @@
                     <label class="dishLabel">Dish Label</label>
                 </div>
             </div>
-            <!-- <p class="galleryMore">More...</p>  -->
-            <!--Probably will either need to learn how to make that more button work or get rid of it-->
         </div>
         <!-- Desserts and Treats -->
         <div id="treatsBox" class="sugestionSection">
@@ -128,8 +126,6 @@
                     <label class="dishLabel">Dish Label</label>
                 </div>
             </div>
-            <!-- <p class="galleryMore">More...</p>  -->
-            <!--Probably will either need to learn how to make that more button work or get rid of it-->
         </div>
         <!-- Quick Meals -->
         <div id="QuickMealBox" class="sugestionSection">
@@ -156,8 +152,6 @@
                     <label class="dishLabel">Dish Label</label>
                 </div>
             </div>
-            <!-- <p class="galleryMore">More...</p>  -->
-            <!--Probably will either need to learn how to make that more button work or get rid of it-->
         </div>
         </div>
     </main>
