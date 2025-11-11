@@ -172,6 +172,10 @@ h2 .recipe{
     margin-top: 1rem;
 }
 
+dl{
+    padding: 1%;
+}
+
 .materialsIngredientsContentsText dt{
     font-weight:500;
 }
