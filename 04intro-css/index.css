@@ -138,6 +138,26 @@ h2{
     width: auto;
 }
 
+.skipButton{
+    padding: .5rem;
+    background-color:#022326;
+    color: #9dc1c9;
+    border: 3px solid #285059;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-bottom: 2rem;
+}
+
+.materialsIngredientsContentsText dd{
+    margin: 0 1.25rem;
+}
+
+a{
+    /* text-decoration: none; */
+    color: #8c613b;
+}
+
+
 /* footer */
 footer{
     text-align: center;
