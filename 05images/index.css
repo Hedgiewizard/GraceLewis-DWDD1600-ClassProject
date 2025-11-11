@@ -94,6 +94,10 @@ h2{
     font-weight: 400;
 }
 
+figcaption{
+    justify-content: center;
+}
+
 /* Page Nav CSS */
 .pageNav h2{
     padding: 0;
@@ -126,6 +130,7 @@ h2{
 
 .galleryBoxesBox{
     margin: auto;
+    flex-wrap: wrap;
     /* margin: 0 2rem; */
 }
 
@@ -145,28 +150,80 @@ h2{
     display: flex;
 }
 
-.galleryBoxImage{
+.galleryImage{
     height: 10rem;
     width: auto;
 }
 
-/* ~About Specific ~ Main Css */
+figure.formImageAndCaption{
+    margin: 2rem 0 0 0;
+    width: 40%;
+    float: right;
+}
 
+figure.formImageAndCaption img{
+    width: 100%;
+    height: auto;
+    float: right;
+}
+
+figure.formImageAndCaption figcaption{
+    text-align: center;
+    font-size: .75rem;
+}
+
+/* ~About Specific ~ Main Css */
+.bioBlock{
+    /* clear: both; makes it so it does the image section cut off that you wanted */
+    clear: both;
+    display: block;
+}
+
+.bioPics{
+    width: 35%;
+    height: auto;
+}
+
+#rich.bioPics{
+    float: left;
+    padding: 0 1rem 1rem 0;
+}
+
+#me.bioPics{
+    float: right;
+    padding: 0 0 1rem 1rem;
+}
 
 /* ~Recipes Specific ~ Main Css */
+.outlineMain{
+    margin-top: 5%;
+}
+
 h2 .recipe{
-    padding: 0 0 .85rem 0;
+    padding: 0 0 1rem 0;
     text-align: center;
+}
+
+.recipe{
+    font-size: 2.5rem;
+}
+
+.resultsImage{
+    float: right;
+    width: 35%;
+    height: auto;
+    padding: 1rem;
 }
 
 .skipButton{
     padding: .5rem;
     background-color:#022326;
-    color: #9dc1c9;
+    color: #abd3dc;
     border: 3px solid #285059;
     border-radius: 5px;
     text-decoration: none;
-    margin-bottom: 2rem;
+    margin: .25rem 1rem;
+    float: left;
 }
 
 .preRecipe p{
@@ -198,4 +255,5 @@ a{
 footer{
     text-align: center;
     padding-top: 3rem;
+    clear:both
 }
