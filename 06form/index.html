@@ -178,11 +178,47 @@
             <figure class="formImageAndCaption">
                 <img src="images/dinners/porkChops.webp" alt="Pork chops, green beans and mashed Potatoes" height="400" width="399" loading="lazy" class="formImage">
                 <figcaption>Pork Chop Dinner</figcaption>
-            </figure>
+            </figure>         
             <div class="formDraft">
                 <h2>Is there any food you'd like to see more recipies for?</h2>
-                <p>Add your suggestions of recipe ideas or cultures you want to see more recipies for below!</p>
-                <p>I'll be a button one day! <br> I want to use this to be a placeholder for a form idea I have. I'm still going to keep the image for the form. So it'll have a form on one side and a image on the other</p>
+                <form method="get" class="myForm" action="thanks.html">
+                    <fieldset>
+                        <legend>Contact Information</legend>
+                        <label>First Name*<input type="text" name="fname" required></label> 
+                        <label>Last Name*<input type="text" name="lname" required></label>
+                        <label>Cell Number*<input type="tel" name="phone" required placeholder="###-###-####"></label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Would it fit in one of our sections?</legend>
+                        <label>Dinners<input type="radio" name="method" value="dinners"></label>
+                        <label>Breakfasts<input type="radio" name="method" value="breakfast"></label>
+                        <label>Desserts or Treats<input type="radio" name="method" value="treats"></label>
+                        <label>Quick Meals<input type="radio" name="method" value="quickMeals"></label>
+                    </fieldset>
+                    <label>Comments or Suggestions
+                        <textarea name="comments"></textarea>
+                    </label>
+                    <input type="submit" value="Thanks for your input!">
+                    <p>We respect your privacy. Unsubscribe at any time.</p>
+                </form>
+
+                <!-- other form ideas
+                    -newsletter
+                        -name
+                        -what level of newsletter(options one)
+                        -what brought you to the site(checkboxes)
+                        -would you recomend this site to someone else?(radio) 
+                    -order some of the book we have used?
+                        -name
+                        -what books do you want to get?(checkbox)
+                            -collect some of the books or people dad has used
+                        -where to deliver(radio)
+                            -my house
+                            -my workplace
+                            -my PO box
+                        -do you want to suggest any cookbooks you want us to check out? (textarea)
+                    -->
+
             </div>
         </div>
     </main>
