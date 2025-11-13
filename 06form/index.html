@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 04hand-coding -->
+    <meta charset="UTF-8">
+    <meta name="description" content="The home page for the SirCooksALot website">
+    <meta name="author" content="Grace Lewis">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fonts & Such -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- StyleSheets -->
+    <link rel="stylesheet" href="index.css">
+    <title>SirCooksALot - Home</title>
+</head>
+<body>
+    <!-- start the page head -->
+    <header>
+        <span>SirCooksALot</span>
+    </header>
+    <!-- start the nav tab -->
+    <nav>
+        <ul>
+            <li class="active"><a href="index.html">Gallery</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#">Helpful Tips</a></li>
+            <li><a href="katsudonJapanesePork.html">Recipe Outline</a></li>
+        </ul>
+    </nav>
+    <!-- Start of the main -->
+    <main>
+        <div class="hero">
+            <h1 class="titleMatchHeader">Recipe Gallery</h1>
+            <div class="pageNav"> <!--I don't know what else I'd call it-->
+            <h2>Here are Some Recipes my Family and I Love!</h2>
+            <ul class="sugestionsButtonsGroup">
+                <li class="sugestionsButton"><a href="#dinnerBox">Go to Dinners</a></li>
+                <li class="sugestionsButton"><a href="#breakfastBox">Spice up Breakfast</a></li>
+                <li class="sugestionsButton"><a href="#treatsBox">Desserts and Treats</a></li>
+                <li class="sugestionsButton"><a href="#quickMealBox">Quick Meals</a></li>
+            </ul>
+        </div>
+        <!-- <div class="intro">
+            <h2>Intro</h2>
+            <p>you're going to need to go off and write a lot of stuff on meals being a pain so you can try and get enough text to put an image next to it. Or maybe put a submisions box near the footer and just set it up in this point</p>
+        </div> -->
+        </div>
+        <div class="typeOfMeal">
+            <!-- Dinners -->
+            <div id="dinnerBox" class="sugestionSection">
+                <h2>Go to Dinners</h2>
+                <div class="galleryBoxesBox">
+                    <!-- <figure class="galleryBox">
+                        <img src="images" alt="" height="" width="" loading="lazy" class="galleryImage">
+                        <figcaption class="dishLabel">Dish Label</figcaption>
+                    </figure> -->
+                    <a href="katsudonJapanesePork.html" class="galleryBox">
+                        <img src="images/porkKatsu.webp" alt="A plate of pork katsu" height="400" width="404" loading="lazy" class="galleryImage">
+                        <p class="dishLabel">Katsudon Japanese Pork</p>
+                    </a>
+                    <figure class="galleryBox">
+                        <img src="images/dinners/beefBulgogi.webp" alt="a bowl of beef bulgogi" height="400" width="404" loading="lazy" class="galleryImage">
+                        <figcaption class="dishLabel">Beef Bulgogi</figcaption>
+                    </figure>
+                    <figure class="galleryBox">
+                        <img src="images/dinners/catfishEtouffee.webp" alt="a plate of catfish etouffee with two slices of sourdough" height="400" width="389" loading="lazy" class="galleryImage">
+                        <figcaption class="dishLabel">Catfish Etouffee</figcaption>
+                    </figure>
+                    <figure class="galleryBox">
+                        <img src="images/dinners/chickenShawarma.webp" alt="A plate of shawarma with Potatoes, chicken, cucumbers and other shawarma fixings" height="400" width="408" loading="lazy" class="galleryImage">
+                        <figcaption class="dishLabel">Chicken Shawarma</figcaption>
+                    </figure>
+                    <figure class="galleryBox">
+                        <img src="images/dinners/chickpeaCauliflowerCurry.webp" alt="Chickpea Cauliflower Curry" height="400" width="399" loading="lazy" class="galleryImage">
+                        <figcaption class="dishLabel">Chickpea Cauliflower Curry</figcaption>
+                    </figure>
+                    <figure class="galleryBox">
+                        <img src="images/dinners/cookShowDinner.webp" alt="The dinner my family made on the BYU dinner takes all" height="400" width="405" loading="lazy" class="galleryImage">
+                        <figcaption class="dishLabel">Lewis Dinner Takes All Meal</figcaption>
+                    </figure>
+                    <figure class="galleryBox">
+                        <img src="images/dinners/jambalaya.webp" alt="Bowl of jambalaya" height="400" width="399" loading="lazy" class="galleryImage">
+                        <figcaption class="dishLabel">Jambalaya</figcaption>
+                    </figure>
+                    <figure class="galleryBox">
+                        <img src="images/dinners/pulledPorkMac.webp" alt="Pulled Pork sandwich and mac and cheese" height="400" width="394" loading="lazy" class="galleryImage">
+                        <figcaption class="dishLabel">Pulled Pork Sandwich</figcaption>
+                    </figure>
+                    <figure class="galleryBox">
+                        <img src="images/dinners/ramen.webp" alt="Bowl of Ramen" height="400" width="406" loading="lazy" class="galleryImage">
+                        <figcaption class="dishLabel">Ramen</figcaption>
+                    </figure>
+                    <figure class="galleryBox">
+                        <img src="images/dinners/sausageBoil.webp" alt="Sausage Boil" height="400" width="398" loading="lazy" class="galleryImage">
+                        <figcaption class="dishLabel">Sausage Boil</figcaption>
+                    </figure>
+                    <figure class="galleryBox">
+                        <img src="images/dinners/sourdoughPizza.webp" alt="sourdough pizza" height="400" width="400" loading="lazy" class="galleryImage">
+                        <figcaption class="dishLabel">Sourdough Pizza</figcaption>
+                    </figure>
+                    <figure class="galleryBox">
+                        <img src="images/dinners/sushi.webp" alt="Sushi" height="400" width="406" loading="lazy" class="galleryImage">
+                        <figcaption class="dishLabel">Sushi</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+        <!-- Breakfast -->
+        <div id="breakfastBox" class="sugestionSection">
+            <h2>Spice up Breakfast</h2>
+            <div class="galleryBoxesBox"> 
+                <figure class="galleryBox">
+                    <img src="images/breakfast/breakfastForDinner.webp" alt="Breakfast for Dinner" height="400" width="406" loading="lazy" class="galleryImage">
+                    <figcaption class="dishLabel">Breakfast for Dinner</figcaption>
+                </figure>
+                <figure class="galleryBox">
+                    <img src="images/breakfast/butterChickenSauseAndEggs.webp" alt="Eggs and hashbrowns with butter chicken sause on top" height="400" width="397" loading="lazy" class="galleryImage">
+                    <figcaption class="dishLabel">Eggs with Butter Chicken Sause</figcaption>
+                </figure>
+                <figure class="galleryBox">
+                    <img src="images/breakfast/shrimpGritsAndEggs.webp" alt="Shrimp and Grits with Eggs" height="400" width="396" loading="lazy" class="galleryImage">
+                    <figcaption class="dishLabel">Shrimp and Grits with Eggs</figcaption>
+                </figure>
+                <figure class="galleryBox">
+                    <img src="images/breakfast/sourdoughFrenchToast.webp" alt="Sourdough French Toast" height="400" width="395" loading="lazy" class="galleryImage">
+                    <figcaption class="dishLabel">Sourdough French Toast</figcaption>
+                </figure>
+                <figure class="galleryBox">
+                    <img src="images/breakfast/sourDoughWaffels.webp" alt="Sourdough Waffels" height="400" width="400" loading="lazy" class="galleryImage">
+                    <figcaption class="dishLabel">Sourdough Waffels</figcaption>
+                </figure>
+            </div>
+        </div>
+        <!-- Desserts and Treats -->
+        <div id="treatsBox" class="sugestionSection">
+            <h2>Desserts and Treats</h2>
+            <div class="galleryBoxesBox"> 
+                <figure class="galleryBox">
+                    <img src="images/treats/cookies.webp" alt="Chocolate Chip Cookies" height="400" width="388" loading="lazy" class="galleryImage">
+                    <figcaption class="dishLabel">Chocolate Chip Cookies</figcaption>
+                </figure>
+                <figure class="galleryBox">
+                    <img src="images/treats/sourdoughBread.webp" alt="Sourdough Bread" height="400" width="406" loading="lazy" class="galleryImage">
+                    <figcaption class="dishLabel">Sourdough Bread</figcaption>
+                </figure>
+            </div>
+        </div>
+        <!-- Quick Meals -->
+        <div id="quickMealBox" class="sugestionSection">
+            <h2>Quick Meals</h2>
+            <div class="galleryBoxesBox"> <!--See if I can have these be filler for a bit while I get the info from my dad so these can link somewhere-->
+                <figure class="galleryBox">
+                    <img src="images/quickMeals/beefLoMein.webp" alt="Beef Lo Mein" height="400" width="401" loading="lazy" class="galleryImage">
+                    <figcaption class="dishLabel">Beef Lo Mein</figcaption>
+                </figure>
+                <figure class="galleryBox">
+                    <img src="images/quickMeals/bowTiePasta.webp" alt="Bow tie pasta" height="400" width="401" loading="lazy" class="galleryImage">
+                    <figcaption class="dishLabel">Bow Tie Pasta</figcaption>
+                </figure>
+                <figure class="galleryBox">
+                    <img src="images/quickMeals/buffaloChickenSalad.webp" alt="Buffalo Chicken Salad" height="400" width="405" loading="lazy" class="galleryImage">
+                    <figcaption class="dishLabel">Buffalo Chicken Salad</figcaption>
+                </figure>
+                <figure class="galleryBox">
+                    <img src="images/quickMeals/chickenAdobo.webp" alt="Chicken Adobo" height="400" width="404" loading="lazy" class="galleryImage">
+                    <figcaption class="dishLabel">Chicken Adobo</figcaption>
+                </figure>
+                <figure class="galleryBox">
+                    <img src="images/quickMeals/tacos.webp" alt="Tacos" height="400" width="392" loading="lazy" class="galleryImage">
+                    <figcaption class="dishLabel">Tacos</figcaption>
+                </figure>
+            </div>
+        </div>
+        <div class="suggestionsSubmissions">
+            <!-- maybe start making a little thing seting up a form where you could ask if there is any other kid recipies they want to see or types of things they'd want to see -->
+            <!-- Add an image here. make a little 'form format on one site, image on the other' -->
+            <figure class="formImageAndCaption">
+                <img src="images/dinners/porkChops.webp" alt="Pork chops, green beans and mashed Potatoes" height="400" width="399" loading="lazy" class="formImage">
+                <figcaption>Pork Chop Dinner</figcaption>
+            </figure>
+            <div class="formDraft">
+                <h2>Is there any food you'd like to see more recipies for?</h2>
+                <p>Add your suggestions of recipe ideas or cultures you want to see more recipies for below!</p>
+                <p>I'll be a button one day! <br> I want to use this to be a placeholder for a form idea I have. I'm still going to keep the image for the form. So it'll have a form on one side and a image on the other</p>
+            </div>
+        </div>
+    </main>
+    <!-- Start the page footer -->
+    <footer>
+        <p>&copy; 2025 &bull; Grace Lewis &bull; Wed Essentials</p>
+    </footer>
+</body>
+</html>
