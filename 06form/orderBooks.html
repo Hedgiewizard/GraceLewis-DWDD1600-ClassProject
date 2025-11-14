@@ -29,6 +29,7 @@
         </ul>
     </nav>
 
+    <!-- Add something about finding the cookbooks we use so you can have it link to this page. Probably want to have it on either the about page or maybe somewhere in the recipe page -->
 
     <!-- Start of the main -->
     <main class="about">
@@ -36,12 +37,38 @@
         <form method="get" class="bookOrder" action="thanks.html">
             <fieldset>
                 <legend>Information</legend>
+                <label>First Name*<input type="text" name="fname" required></label>
+                <label>Last Name*<input type="text" name="lname" required></label>
+                <label>Cell Number* <input type="tel" name="phone" required></label>
+                <label>Email* <input type="text" name="email" required></label>
             </fieldset>
             <fieldset>
                 <legend>Which books did you want to get?</legend>
+                <!-- I'll need to go back and find several of these from my dad. I should also try and find the cookbook my family used growing up. If it even still exists. -->
+                <label><input type="checkbox" name="notes" value="chosen">Dad's numerous notes files turn book</label>
+                <label><input type="checkbox" name="bayou" value="chosen">Bayou by Melissa M. Martin</label>
+                <label><input type="checkbox" name="childhood" value="chosen">The one from my childhood kitchen</label>
+                <label><input type="checkbox" name="grandma" value="chosen">Grandma Lewis's recipies</label>
+            </fieldset>
+            <fieldset>
+                <legend>Where do you want them delivered?</legend>
+                <label><input type="radio" name="where" value="house">My House</label>
+                <label><input type="radio" name="where" value="workplace">My Workplace</label>
+                <label><input type="radio" name="where" value="poBox">My PO Box</label>
+                <label>If PO box selected input PO box number if not input "N/A"<input type="text" name="poBoxNumber" required></label>
+                <label>Who do you want to order through?
+                    <select name="time">
+                        <option value="none">Please Select</option>
+                        <option value="localBookstore">Local Bookstore</option>
+                        <option value="barnesNoble">Barnes & Noble</option>
+                        <option value="amazon">Amazon</option>
+                        <option value="pidgin">Hand Delivered via Pidgin</option>
+                    </select>
+                </label>
             </fieldset>
             <fieldset>
                 <legend>Are there any books you would suggest we look into?</legend>
+                <textarea name="suggestedBooks"></textarea>
             </fieldset>
             <input type="submit" value="Place Book Order">
         </form>
@@ -55,6 +82,7 @@
                     -my house
                     -my workplace
                     -my PO box
+                    -time?
                 -do you want to suggest any cookbooks you want us to check out? (textarea) -->
     </main>
 

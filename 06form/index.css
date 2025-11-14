@@ -203,6 +203,10 @@ figure.formImageAndCaption figcaption{
     padding: 0 0 1rem 1rem;
 }
 
+.newsletter{
+    clear: both;
+}
+
 /* ~Recipes Specific ~ Main Css */
 .outlineMain{
     margin-top: 5%;
@@ -257,6 +261,12 @@ a{
     text-decoration: none;
     color: #8c613b;
 }
+
+/* ~OrderBooks Specific ~ Main Css */
+
+
+/* ~Thanks Specific ~ Main Css */
+
 
 
 

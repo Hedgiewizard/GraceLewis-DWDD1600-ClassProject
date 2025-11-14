@@ -65,26 +65,50 @@
             <form method="get" class="newsletter" action="thanks.html">
                 <fieldset>
                     <legend>Information</legend>
+                    <label>First Name*<input type="text" name="fname" required></label>
+                    <label>Last Name*<input type="text" name="lname" required></label>
+                    <label>Email* <input type="text" name="email" required></label>
                 </fieldset>
                 <fieldset>
                     <legend>What level of Newsletter</legend>
+                    <label><input type="checkbox" name="siteUpdate" value="chosen">Site Updates</label>
+                    <label><input type="checkbox" name="suggestions" value="chosen">Cooking Suggestions</label>
+                    <label><input type="checkbox" name="tips" value="chosen">Tips</label>
                 </fieldset>
                 <fieldset>
                     <legend>What brought you do this site?</legend>
+                    <select name="brought">
+                        <option value="none">Please Select</option>
+                        <option value="needed">Needed a Recipe</option>
+                        <option value="recomendation">Got a Recomendation</option>
+                        <option value="stumbled">Stumbled Accross</option>
+                        <option value="throughInstagram">Found Through Instagram</option>
+                    </select>
                 </fieldset>
                 <fieldset>
                     <legend>Would you recommend this site to someone else?</legend>
+                    <label><input type="radio" name="wouldRecommend" value="yes">Yes</label>
+                    <label><input type="radio" name="wouldRecommend" value="no">No</label>
+                    <label><input type="radio" name="wouldRecommend" value="maybe">Maybe</label>
                 </fieldset>
                 <input type="submit" value="Submit Newsletter Request">
+                <!-- I don't know if I need to have this part but a lot of other newsletter things have this under their form -->
+                <p>We respect your privacy. Unsubscribe at any time.</p>
             </form>
 
         <!-- -newsletter
                 -name
+                    -name
+                    -email
                 -what level of newsletter(checkboxes)
                     -just updates
                     -suggestions
                     -tips
                 -what brought you to the site(options one)
+                    -needed a recipe
+                    -got a recomendation
+                    -stumbled accross
+                    -found instagram
                 -would you recomend this site to someone else?(radio)  -->
         </div>
         <div class="references">
