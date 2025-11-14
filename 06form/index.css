@@ -76,7 +76,12 @@ nav li.active a{
 /* ~General ~ Main Css */
 .hero{
     padding: 5rem 0 2rem 0;
+    text-align: center;
     /* probably going to want to add a background color or image here later */
+}
+
+.hero h2{
+    padding-bottom: 2rem;
 }
 
 .titleMatchHeader{
@@ -336,7 +341,7 @@ dl{
 
 a{
     text-decoration: none;
-    color: #8c613b;
+    color: #592B02;
 }
 
 /* ~OrderBooks Specific ~ Main Css */
