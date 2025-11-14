@@ -34,7 +34,7 @@
     <!-- Start of the main -->
     <main class="about">
         <h1 class="titleMatchHeader">Get Books We Use</h1>
-        <form method="get" class="bookOrder" action="thanks.html">
+        <form method="get" class="myForm" id="bookOrder" action="thanks.html">
             <fieldset>
                 <legend>Information</legend>
                 <label>First Name*<input type="text" name="fname" required></label>
@@ -55,7 +55,7 @@
                 <label><input type="radio" name="where" value="house">My House</label>
                 <label><input type="radio" name="where" value="workplace">My Workplace</label>
                 <label><input type="radio" name="where" value="poBox">My PO Box</label>
-                <label>If PO box selected input PO box number if not input "N/A"<input type="text" name="poBoxNumber" required></label>
+                <label>If PO box selected input PO box number if not input "N/A"<input type="text" name="poBoxNumber"></label>
                 <label>Who do you want to order through?
                     <select name="time">
                         <option value="none">Please Select</option>

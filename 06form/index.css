@@ -1,3 +1,12 @@
+/* ~~ Brand Style Notes ~~ */
+/* Colors
+#285059 -- Lighter Teal
+#022326 -- Darker Teal
+#bfbfbd -- Light Gray
+#592B02 -- Darker Brown with a hint of red.
+#8c613b -- Jungle Log Brown */
+
+
 /* All - Central Header*/
 body{
     font-family: "Montserrat", sans-serif;
@@ -98,6 +107,55 @@ figcaption{
     justify-content: center;
 }
 
+/* all forms css */
+.myForm fieldset{
+    border: 1.25px solid #285059;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+    background-color: #fff2da;
+}
+
+.myForm legend{
+    color: #285059;
+}
+
+.myForm label{
+    margin: .5rem;
+}
+
+.myForm label, .myForm select, .myForm [type=text], .myForm [type=tel], .myForm textarea {
+    display: block;
+}
+
+.myForm [type=text], .myForm [type=tel], .myForm select, .myForm textarea {
+    border: solid 1px #022326;
+    padding: .3rem;
+    width: 275px;
+    border-radius: .3rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 200;
+}
+
+.myForm textarea{
+    height: 6.5rem;
+    width: 20rem;
+}
+
+.myForm :required{
+    background-color: rgba(156,51,53,0.08);
+}
+
+.myForm [type=submit] {
+    font-family: "Montserrat", sans-serif;
+    background-color: #022326;
+    border: none;
+    padding: 1.25rem 2.25rem;
+    border-radius: 10px;
+    color: #ececec;
+    font-weight: 400;
+    margin: .5rem 0 0 .5vw;
+}
+
 /* Page Nav CSS */
 .pageNav h2{
     padding: 0;
@@ -105,7 +163,7 @@ figcaption{
 }
 
 .pageNav{
-    text-align: center;
+    margin: auto;
 }
 
 
@@ -181,6 +239,16 @@ figure.formImageAndCaption figcaption{
     font-size: .75rem;
 }
 
+/* Gallery Form CSS */
+#recommendRecipie fieldset{
+    width: 55%;
+}
+
+#recommendRecipie textarea{
+    height: 4rem;
+    width: 50%;
+}
+
 /* ~About Specific ~ Main Css */
 .bioBlock{
     /* clear: both; makes it so it does the image section cut off that you wanted */
@@ -205,6 +273,15 @@ figure.formImageAndCaption figcaption{
 
 .newsletter{
     clear: both;
+}
+
+/* About Form CSS */
+.newsletter{
+    justify-items: center;
+}
+
+#newsletterForm{
+    width: 55%;
 }
 
 /* ~Recipes Specific ~ Main Css */
@@ -263,7 +340,18 @@ a{
 }
 
 /* ~OrderBooks Specific ~ Main Css */
+#bookOrder{
+    width: 95%;
+    justify-items: center;
+}
 
+#bookOrder fieldset{
+    width: 85%;
+}
+
+#bookOrder [type=submit] {
+    margin: .25rem 8rem;
+}
 
 /* ~Thanks Specific ~ Main Css */
 
