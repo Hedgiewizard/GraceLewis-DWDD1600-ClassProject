@@ -128,11 +128,11 @@ figcaption{
     margin: .5rem;
 }
 
-.myForm label, .myForm select, .myForm [type=text], .myForm [type=tel], .myForm textarea {
+.myForm label, .myForm select, .myForm [type=text], .myForm [type=tel], .myForm textarea, .myForm [type=email] {
     display: block;
 }
 
-.myForm [type=text], .myForm [type=tel], .myForm select, .myForm textarea {
+.myForm [type=text], .myForm [type=tel], .myForm select, .myForm textarea, .myForm [type=email] {
     border: solid 1px #022326;
     padding: .3rem;
     width: 275px;
@@ -356,6 +356,10 @@ a{
 
 #bookOrder [type=submit] {
     margin: .25rem 8rem;
+}
+
+.poBoxNumberLabel{
+    padding-top: .75rem;
 }
 
 /* ~Thanks Specific ~ Main Css */

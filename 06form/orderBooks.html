@@ -40,7 +40,7 @@
                 <label>First Name*<input type="text" name="fname" required></label>
                 <label>Last Name*<input type="text" name="lname" required></label>
                 <label>Cell Number* <input type="tel" name="phone" required></label>
-                <label>Email* <input type="text" name="email" required></label>
+                <label>Email* <input type="email" name="email" required></label>
             </fieldset>
             <fieldset>
                 <legend>Which books did you want to get?</legend>
@@ -55,7 +55,7 @@
                 <label><input type="radio" name="where" value="house">My House</label>
                 <label><input type="radio" name="where" value="workplace">My Workplace</label>
                 <label><input type="radio" name="where" value="poBox">My PO Box</label>
-                <label>If PO box selected input PO box number if not input "N/A"<input type="text" name="poBoxNumber"></label>
+                <label class="poBoxNumberLabel">If PO box selected input PO box number if not input "N/A"<input type="text" name="poBoxNumber"></label>
                 <label>Who do you want to order through?
                     <select name="time">
                         <option value="none">Please Select</option>
@@ -68,7 +68,7 @@
             </fieldset>
             <fieldset>
                 <legend>Are there any books you would suggest we look into?</legend>
-                <textarea name="suggestedBooks"></textarea>
+                <textarea name="suggestedBooks">Book Suggestions</textarea>
             </fieldset>
             <input type="submit" value="Place Book Order">
         </form>
