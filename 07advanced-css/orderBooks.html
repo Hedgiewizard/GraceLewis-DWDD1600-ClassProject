@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="The home page for the SirCooksALot website">
+    <meta name="author" content="Grace Lewis">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fonts & Such -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- StyleSheets -->
+    <link rel="stylesheet" href="index.css">
+    <title>SirCooksALot - Order Books</title>
+</head>
+<body>
+    <!-- start the page head -->
+    <header>
+        <span>SirCooksALot</span>
+    </header>
+    <!-- start the nav tab -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Gallery</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#">Helpful Tips</a></li>
+            <li><a href="katsudonJapanesePork.html">Recipe Outline</a></li>
+            <li class="active"><a href="orderBooks.html">Get Books We Use</a></li>
+        </ul>
+    </nav>
+
+    <!-- Add something about finding the cookbooks we use so you can have it link to this page. Probably want to have it on either the about page or maybe somewhere in the recipe page -->
+
+    <!-- Start of the main -->
+    <main class="about">
+        <h1 class="titleMatchHeader">Get Books We Use</h1>
+        <form method="get" class="myForm" id="bookOrder" action="thanks.html">
+            <fieldset>
+                <legend>Information</legend>
+                <label>First Name*<input type="text" name="fname" required></label>
+                <label>Last Name*<input type="text" name="lname" required></label>
+                <label>Cell Number* <input type="tel" name="phone" required></label>
+                <label>Email* <input type="email" name="email" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Which books did you want to get?</legend>
+                <!-- I'll need to go back and find several of these from my dad. I should also try and find the cookbook my family used growing up. If it even still exists. -->
+                <label><input type="checkbox" name="notes" value="chosen">Dad's numerous notes files turn book</label>
+                <label><input type="checkbox" name="bayou" value="chosen">Bayou by Melissa M. Martin</label>
+                <label><input type="checkbox" name="childhood" value="chosen">The one from my childhood kitchen</label>
+                <label><input type="checkbox" name="grandma" value="chosen">Grandma Lewis's recipies</label>
+            </fieldset>
+            <fieldset>
+                <legend>Where do you want them delivered?</legend>
+                <label><input type="radio" name="where" value="house">My House</label>
+                <label><input type="radio" name="where" value="workplace">My Workplace</label>
+                <label><input type="radio" name="where" value="poBox">My PO Box</label>
+                <label class="poBoxNumberLabel">If PO box selected input PO box number if not input "N/A"<input type="text" name="poBoxNumber"></label>
+                <label>Who do you want to order through?
+                    <select name="time">
+                        <option value="none">Please Select</option>
+                        <option value="localBookstore">Local Bookstore</option>
+                        <option value="barnesNoble">Barnes & Noble</option>
+                        <option value="amazon">Amazon</option>
+                        <option value="pidgin">Hand Delivered via Pidgin</option>
+                    </select>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Are there any books you would suggest we look into?</legend>
+                <textarea name="suggestedBooks">Book Suggestions</textarea>
+            </fieldset>
+            <input type="submit" value="Place Book Order">
+        </form>
+
+
+        <!-- -order some of the book we have used?
+                -name
+                -what books do you want to get?(checkbox)
+                    -collect some of the books or people dad has used
+                -where to deliver(radio)
+                    -my house
+                    -my workplace
+                    -my PO box
+                    -time?
+                -do you want to suggest any cookbooks you want us to check out? (textarea) -->
+    </main>
+
+
+    <!-- Start of the footer -->
+    <footer>
+        <p>&copy; 2025 &bull; Grace Lewis &bull; Wed Essentials</p>
+    </footer>
+</body>
+</html>
