@@ -122,11 +122,22 @@ nav .active{
 
 /* Main - Central Header*/
 /* ~General ~ Main Css */
-.hero{
-    padding: 5rem 0 2rem 0;
-    text-align: center;
-    /* probably going to want to add a background color or image here later */
-}
+@media only screen and (max-width: 800px){
+    .hero{
+        padding: 1rem 0 2rem 0;
+        text-align: center;
+        /* probably going to want to add a background color or image here later */
+    }
+}/* end small screens */
+
+/* LARGE screen NAVigation */
+@media only screen and (min-width: 801px){
+    .hero{
+        padding: 5rem 0 2rem 0;
+        text-align: center;
+        /* probably going to want to add a background color or image here later */
+    }
+}/* end LARGE screens */
 
 .hero h2{
     padding-bottom: 2rem;
@@ -406,12 +417,21 @@ a{
 }
 
 /* ~OrderBooks Specific ~ Main Css */
+.heroImage{
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: auto; 
+    padding: 1rem 0;
+}
+
 .OrderBooks, #orderBooksTitle, #bookOrder{
     margin: 0 auto;
+    justify-items: center;
 }
 
 #bookOrder{
-    width: 95%;
+    width: 85%;
     /* justify-items: center; */
 }
 
