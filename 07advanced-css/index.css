@@ -7,7 +7,7 @@
 #8c613b -- Jungle Log Brown */
 
 
-/* All - Central Header*/
+/* All */
 body{
     font-family: "Montserrat", sans-serif;
     background-color: #fff3de;
@@ -18,6 +18,9 @@ body{
 main{
     padding: .5rem 3rem;
 }
+
+/* Prevent problems on different browsers */
+* {box-sizing: border-box;}
 
 
 
@@ -35,7 +38,7 @@ header span{
 
 header .siteLogo{
     padding: .4rem;
-    height: 2rem;
+    height: 3rem;
     width: auto;
 }
 
@@ -51,30 +54,61 @@ nav{
     background-color: #8c613b;
 }
 
-nav ul{
+nav li a:hover{
+    color: white;
+}
+
+nav ul li .active{
+    color: #ae8460;
+}
+
+/* small screen NAVigation */
+@media only screen and (max-width: 800px){
+    nav ul{
+        margin: 0;
+        padding: 0;
+    }
+
+    nav a{
+        display: block;
+        text-align: center;
+        padding: .8rem;
+        color: #022326;
+        font-size: 1.15rem;
+        padding: 1rem 1.5rem;
+        font-weight: 300;
+    }
+
+    nav .active{
+        background-image: linear-gradient(to bottom, #022326, #193b43);
+        color: #ae8460;
+        }
+}/* end small screens */
+
+/* LARGE screen NAVigation */
+@media only screen and (min-width: 801px){
+    nav ul{
     display: flex;
     margin: 0;
     list-style: none;
     padding: 0 2.5rem;
-}
+    }
 
-nav a{
+    nav a{
     display: block;
     text-decoration: none;
     color: #022326;
     font-size: 1.15rem;
     padding: 1rem 1.5rem;
     font-weight: 300;
-}
+    }
 
-nav li a:hover{
-    color: white;
-}
-
-nav li.active a{
-    background-color: #022326;
+    nav .active{
+    background-image: linear-gradient(to bottom, #022326, #193b43);
     color: #ae8460;
-}
+
+    }
+}/* end LARGE screens */
 
 
 
@@ -179,6 +213,15 @@ figcaption{
 
 
 /* ~Gallery Specific ~ Main Css */
+@media only screen and (max-width: 800px){
+    /* Add a way do when the screen is small the .sugestionsButtons have multiple lines */
+}/* end small screens */
+
+/* LARGE screen NAVigation */
+@media only screen and (min-width: 801px){
+    /* have the normal css probably */
+}/* end LARGE screens */
+
 .sugestionsButtonsGroup{
     justify-content: center;
     padding: 0;
