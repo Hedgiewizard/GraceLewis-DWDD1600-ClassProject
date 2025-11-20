@@ -19,6 +19,13 @@ main{
     padding: .5rem 3rem;
 }
 
+/* Whole page Max-width stuff */
+
+header, nav, main, footer {
+    max-width: 95rem;
+    margin: 0 auto;
+}
+
 /* Prevent problems on different browsers */
 * {box-sizing: border-box;}
 
@@ -43,8 +50,8 @@ header .siteLogo{
 }
 
 .tagline{
-    font-size: 1rem;
-    padding: 0;
+    padding: 1rem .5rem;
+    font-size: .8rem;
 }
 
 
@@ -52,13 +59,14 @@ header .siteLogo{
 /* Nav - Central Header*/
 nav{
     background-color: #8c613b;
+    color: #022326;
 }
 
 nav li a:hover{
     color: white;
 }
 
-nav ul li .active{
+nav .active{
     color: #ae8460;
 }
 
@@ -73,13 +81,14 @@ nav ul li .active{
         display: block;
         text-align: center;
         padding: .8rem;
-        color: #022326;
         font-size: 1.15rem;
         padding: 1rem 1.5rem;
-        font-weight: 300;
+        font-weight: 400;
+        color: #022326;
+        text-decoration: none;
     }
 
-    nav .active{
+    nav .active a{
         background-image: linear-gradient(to bottom, #022326, #193b43);
         color: #ae8460;
         }
@@ -97,16 +106,15 @@ nav ul li .active{
     nav a{
     display: block;
     text-decoration: none;
-    color: #022326;
-    font-size: 1.15rem;
+    /* font-size: 1.15rem; */
     padding: 1rem 1.5rem;
     font-weight: 300;
+    color: #022326;
     }
 
-    nav .active{
+    nav .active a{
     background-image: linear-gradient(to bottom, #022326, #193b43);
     color: #ae8460;
-
     }
 }/* end LARGE screens */
 
