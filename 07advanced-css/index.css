@@ -426,7 +426,8 @@ a{
 }
 
 .OrderBooks, #orderBooksTitle, #bookOrder{
-    margin: 0 auto;
+    display: block;
+    margin: auto;
     justify-items: center;
 }
 
