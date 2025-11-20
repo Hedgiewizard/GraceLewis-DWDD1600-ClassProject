@@ -30,7 +30,13 @@ header{
 }
 
 header span{
-    padding: .8rem;
+    padding: .8rem .2rem;
+}
+
+header .siteLogo{
+    padding: .4rem;
+    height: 2rem;
+    width: auto;
 }
 
 .tagline{
@@ -210,6 +216,10 @@ figcaption{
     width: 150px;
 }
 
+.galleryBox img:hover{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
+}
+
 /* make sure to add any additional recipie classes you add to the gallery */
 .katsudonPork, .dishPlaceholder{
     display: flex;
@@ -345,9 +355,13 @@ a{
 }
 
 /* ~OrderBooks Specific ~ Main Css */
+.OrderBooks, #orderBooksTitle, #bookOrder{
+    margin: 0 auto;
+}
+
 #bookOrder{
     width: 95%;
-    justify-items: center;
+    /* justify-items: center; */
 }
 
 #bookOrder fieldset{
