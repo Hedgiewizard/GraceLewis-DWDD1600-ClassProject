@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="The home page for the SirCooksALot website">
+    <meta name="author" content="Grace Lewis">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fonts & Such -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- StyleSheets -->
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>SirCooksALot - About</title>
+</head>
+<body>
+    <!-- start the page head -->
+    <header>
+        <img src="images/Logo.webp" alt="A wok with fire" class="siteLogo" height="100" width="100">
+        <span>SirCooksALot</span>
+    </header>
+    <!-- start the nav tab -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Gallery</a></li>
+            <li class="active"><a href="about.html">About</a></li>
+            <li><a href="#">Helpful Tips</a></li>
+            <li><a href="katsudonJapanesePork.html">Recipe Outline</a></li>
+            <li><a href="orderBooks.html">Get Books We Use</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- Start of the main -->
+    <main class="about">
+        <h1 class="titleMatchHeader">About</h1>
+        <div class="bios">
+            <div class="bioBlock" id="richIntro">
+                <img src="images/sketchWebp/littleManThumbsUp copy.webp" alt="Currently it is a doodle of a guy doing a thumbs up. Later it will be a picture of my dad, SirCooksALot. I'll probably take the one from his profile on instagram" loading="lazy" class="bioPics" id="rich">
+                <div class="bioText">
+                    <h2>Hi I'm SirCooksALot!</h2>
+                    <p> SirCooksALot is a husband and a father of 5 who loves to cook and share his creations with his friends and family!
+                    <br>If you want to see more of what he does go and check out his <a href="https://www.instagram.com/sircooksalot_richlewis/" target="_blank" class="inlineLink">Instagram</a>.
+                    <br><em>More Text:</em> Then I'm not 100% sure on how to get the images to do what I want so I'll put some extra text here. Just ramble a little bit. I'll probably ask my dad later on what else he would want added to this point or figure out how to get the float to work the way I want.</p><!--go double check how to add a tab in HTML because I prefer the way that looks-->
+                <!-- Also get more from dad of other text he wants added here -->
+                </div>
+            </div>
+            <div class="bioBlock" id="myIntro">
+                <img src="images/sketchWebp/littleManThumbsUp copy.webp" alt="Currently it is a doodle of a guy doing a thumbs up. Later it will be a picture of my dad, SirCooksALot. I'll probably take the one from his profile on instagram" loading="lazy" class="bioPics" id="me">
+                <div>
+                    <h2>Hi I'm his kid! I'm making and maintaining the site!</h2>
+                    <p>I typically go by Achilles online. I am currently, half way through college, and I like to eat and cook good food.
+                    <br> Why am I doing this? What made this website happen? Well, back in like 2018-19, my dad suggested I make him his own cooking website. He was getting really into cooking a bunch of new recipes and posting about them, and I was several years deep into learning to code and design; it made complete sense. Unfortunately, both of us were just busy enough that any time I had time to plan this out, he was busy, and any he had time to plan this out, I was busy. (We both also HEAVILY underestimated how much planning and effort it took to plan your own site, so it was taking a lot longer than either of us planned, but we're not going to talk about that.) That lead to this plan ending up on the back burner for years.
+                    <br> Come back to today: I'm in college, my siblings are starting to move out, and I realize I don't have too many of the recipes I enjoy from my dad and will probably be moving out in the near future, and it would be nice to have those. This site is an excellent way for me to collect all the recipes my dad has made staples throughout the years and share them with other college-age students moving out and living on their own who still want good homecooked recipes but don't really know where to start when it comes to looking them up yourself. (We've also learned that my dad's notes app copy of these recipes makes sense to him but is a bit difficult to understand to others, so this gives me an excuse to translate these into a way of writing that is a lot easier for others also to understand but we're also not going to talk about that.)</p>
+                    <p>If you were courious the college I attend is Utah Valley University. You can find them here</p>
+                        <address>800 W University Pkwy,
+                        <br> Orem, UT 84058 
+                        <br>Toll-free: <a href="tel:8018638000">(801) 863-8000</a>
+                        </address>
+                    <!-- If you wanted to it probably wouldn't hurt to put a little, "here's other places you can find me!" here -->
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="newsletter">
+            <h2>Want to sign up for our newsletter?</h2>
+            <form method="get" class="myForm" id="newsletterForm" action="thanks.html">
+                <fieldset>
+                    <legend>Information</legend>
+                    <label>First Name*<input type="text" name="fname" required></label>
+                    <label>Last Name*<input type="text" name="lname" required></label>
+                    <label>Email* <input type="text" name="email" required></label>
+                </fieldset>
+                <fieldset>
+                    <legend>What level of Newsletter</legend>
+                    <label><input type="checkbox" name="siteUpdate" value="chosen">Site Updates</label>
+                    <label><input type="checkbox" name="suggestions" value="chosen">Cooking Suggestions</label>
+                    <label><input type="checkbox" name="tips" value="chosen">Tips</label>
+                </fieldset>
+                <fieldset>
+                    <legend>What brought you do this site?</legend>
+                    <select name="brought">
+                        <option value="none">Please Select</option>
+                        <option value="needed">Needed a Recipe</option>
+                        <option value="recomendation">Got a Recomendation</option>
+                        <option value="stumbled">Stumbled Accross</option>
+                        <option value="throughInstagram">Found Through Instagram</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <legend>Would you recommend this site to someone else?</legend>
+                    <label><input type="radio" name="wouldRecommend" value="yes">Yes</label>
+                    <label><input type="radio" name="wouldRecommend" value="no">No</label>
+                    <label><input type="radio" name="wouldRecommend" value="maybe">Maybe</label>
+                </fieldset>
+                <input type="submit" value="Submit Newsletter Request" class="newsletterButton">
+                <!-- I don't know if I need to have this part but a lot of other newsletter things have this under their form -->
+                <p>We respect your privacy. Unsubscribe at any time.</p>
+            </form>
+
+        <!-- -newsletter
+                -name
+                    -name
+                    -email
+                -what level of newsletter(checkboxes)
+                    -just updates
+                    -suggestions
+                    -tips
+                -what brought you to the site(options one)
+                    -needed a recipe
+                    -got a recomendation
+                    -stumbled accross
+                    -found instagram
+                -would you recomend this site to someone else?(radio)  -->
+        </div>
+        <div class="references">
+            <!-- Where the images are from -->
+            <!-- Image references -->
+        </div>
+    </main>
+
+
+    <!-- Start of the footer -->
+    <footer>
+        <p>&copy; 2025 &bull; Grace Lewis &bull; Wed Essentials</p>
+    </footer>
+</body>
+</html>

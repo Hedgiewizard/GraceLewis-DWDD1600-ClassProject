@@ -1,0 +1,461 @@
+/* ~~ Brand Style Notes ~~ */
+/* Colors
+#285059 -- Lighter Teal
+#022326 -- Darker Teal
+#bfbfbd -- Light Gray
+#592B02 -- Darker Brown with a hint of red.
+#8c613b -- Jungle Log Brown */
+
+
+/* All */
+body{
+    font-family: "Montserrat", sans-serif;
+    background-color: #fff3de;
+    color: #022326;
+    margin: 0;
+}
+
+main{
+    padding: .5rem 3rem;
+}
+
+/* Whole page Max-width stuff */
+
+header, nav, main, footer {
+    max-width: 95rem;
+    margin: 0 auto;
+}
+
+/* Prevent problems on different browsers */
+* {box-sizing: border-box;}
+
+
+
+/* Header - Central Header*/
+header{
+    display: flex;
+    padding-right: 4rem;
+    background-color: #022326;
+    color: #ae8460;
+}
+
+header span{
+    padding: .8rem .2rem;
+}
+
+header .siteLogo{
+    padding: .4rem;
+    height: 3rem;
+    width: auto;
+}
+
+.tagline{
+    padding: 1rem .5rem;
+    font-size: .8rem;
+}
+
+
+
+/* Nav - Central Header*/
+nav{
+    background-color: #8c613b;
+    color: #022326;
+}
+
+nav li a:hover{
+    color: white;
+}
+
+nav .active{
+    color: #ae8460;
+}
+
+/* small screen NAVigation */
+@media only screen and (max-width: 800px){
+    nav ul{
+        margin: 0;
+        padding: 0;
+    }
+
+    nav a{
+        display: block;
+        text-align: center;
+        padding: .8rem;
+        font-size: 1.15rem;
+        padding: 1rem 1.5rem;
+        font-weight: 400;
+        color: #022326;
+        text-decoration: none;
+    }
+
+    nav .active a{
+        background-image: linear-gradient(to bottom, #022326, #193b43);
+        color: #ae8460;
+        }
+}/* end small screens */
+
+/* LARGE screen NAVigation */
+@media only screen and (min-width: 801px){
+    nav ul{
+    display: flex;
+    margin: 0;
+    list-style: none;
+    padding: 0 2.5rem;
+    }
+
+    nav a{
+    display: block;
+    text-decoration: none;
+    /* font-size: 1.15rem; */
+    padding: 1rem 1.5rem;
+    font-weight: 300;
+    color: #022326;
+    }
+
+    nav .active a{
+    background-image: linear-gradient(to bottom, #022326, #193b43);
+    color: #ae8460;
+    }
+}/* end LARGE screens */
+
+
+
+/* Main - Central Header*/
+/* ~General ~ Main Css */
+@media only screen and (max-width: 800px){
+    .hero{
+        padding: 1rem 0 2rem 0;
+        text-align: center;
+        /* probably going to want to add a background color or image here later */
+    }
+}/* end small screens */
+
+/* LARGE screen NAVigation */
+@media only screen and (min-width: 801px){
+    .hero{
+        padding: 5rem 0 2rem 0;
+        text-align: center;
+        /* probably going to want to add a background color or image here later */
+    }
+}/* end LARGE screens */
+
+.hero h2{
+    padding-bottom: 2rem;
+}
+
+.titleMatchHeader{
+    padding: 2rem 0 0 0;
+}
+
+.sugestionsButtonsGroup, .galleryBoxesBox{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    list-style-type: none;
+}
+
+/* h1, h2, p, a, tags CSS */
+h1{
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 700;
+    padding: 0;
+    margin: 1rem;
+}
+
+h2{
+    font-weight: 400;
+}
+
+figcaption{
+    justify-content: center;
+}
+
+/* all forms css */
+.myForm fieldset{
+    border: 1.25px solid #285059;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+    background-color: #fff2da;
+}
+
+.myForm legend{
+    color: #285059;
+}
+
+.myForm label{
+    margin: .5rem;
+}
+
+.myForm label, .myForm select, .myForm [type=text], .myForm [type=tel], .myForm textarea, .myForm [type=email] {
+    display: block;
+}
+
+.myForm [type=text], .myForm [type=tel], .myForm select, .myForm textarea, .myForm [type=email] {
+    border: solid 1px #022326;
+    padding: .3rem;
+    width: 275px;
+    border-radius: .3rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 200;
+}
+
+.myForm textarea{
+    height: 6.5rem;
+    width: 20rem;
+}
+
+.myForm :required{
+    background-color: rgba(156,51,53,0.08);
+}
+
+.myForm [type=submit] {
+    font-family: "Montserrat", sans-serif;
+    background-color: #022326;
+    border: none;
+    padding: 1.25rem 2.25rem;
+    border-radius: 10px;
+    color: #ececec;
+    font-weight: 400;
+    margin: .5rem 0 0 .5vw;
+}
+
+/* Page Nav CSS */
+.pageNav h2{
+    padding: 0;
+    margin: 0;
+}
+
+.pageNav{
+    margin: auto;
+}
+
+
+/* ~Gallery Specific ~ Main Css */
+@media only screen and (max-width: 800px){
+    /* Add a way do when the screen is small the .sugestionsButtons have multiple lines */
+}/* end small screens */
+
+/* LARGE screen NAVigation */
+@media only screen and (min-width: 801px){
+    /* have the normal css probably */
+}/* end LARGE screens */
+
+.sugestionsButtonsGroup{
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.sugestionsButton{
+    padding: 1rem;
+    margin: 0.55rem 1.25rem;
+    background-color: #285059;
+    color: #ececec;
+}
+
+.sugestionsButton a{
+    color: #ececec;
+    text-decoration: none;
+}
+
+.galleryBoxesBox{
+    margin: auto;
+    flex-wrap: wrap;
+    /* margin: 0 2rem; */
+}
+
+.galleryBoxesBox p{
+    padding: 0 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+.galleryBox{
+    /* display: flex; */
+    justify-content: center;
+    margin: 0 2rem;
+    width: 150px;
+}
+
+.galleryBox img:hover{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
+}
+
+/* make sure to add any additional recipie classes you add to the gallery */
+.katsudonPork, .dishPlaceholder{
+    display: flex;
+}
+
+.galleryImage{
+    height: 10rem;
+    width: auto;
+    padding: 1rem 0px;
+}
+
+.suggestionsSubmissions{
+    margin-top: 7rem;
+    padding: 0 5rem;
+}
+
+figure.formImageAndCaption{
+    width: 40%;
+    float: right;
+    margin: 0;
+    padding: 0 0 1rem 1rem;
+}
+
+figure.formImageAndCaption img{
+    width: 100%;
+    height: auto;
+    float: right;
+}
+
+figure.formImageAndCaption figcaption{
+    text-align: center;
+    font-size: .75rem;
+}
+
+/* Gallery Form CSS */
+#recommendRecipie fieldset{
+    width: 55%;
+}
+
+#recommendRecipie textarea{
+    height: 4rem;
+    width: 50%;
+}
+
+/* ~About Specific ~ Main Css */
+.bioBlock{
+    /* clear: both; makes it so it does the image section cut off that you wanted */
+    clear: both;
+    display: block;
+}
+
+.bioPics{
+    width: 35%;
+    height: auto;
+}
+
+#rich.bioPics{
+    float: left;
+    padding: 0 1rem 1rem 0;
+}
+
+#me.bioPics{
+    float: right;
+    padding: 0 0 1rem 1rem;
+}
+
+.newsletter{
+    clear: both;
+}
+
+/* About Form CSS */
+.newsletter{
+    justify-items: center;
+}
+
+#newsletterForm{
+    width: 55%;
+}
+
+/* ~Recipes Specific ~ Main Css */
+.outlineMain{
+    margin-top: 5%;
+}
+
+h2 .recipe{
+    padding: 0 0 1rem 0;
+    text-align: center;
+}
+
+.recipe{
+    font-size: 2.5rem;
+}
+
+.resultsImage{
+    float: right;
+    width: 35%;
+    height: auto;
+    padding: 1rem;
+}
+
+.skipButton{
+    padding: .5rem;
+    background-color:#022326;
+    color: #abd3dc;
+    border: 3px solid #285059;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: .25rem 1rem;
+    float: left;
+}
+
+.preRecipe p{
+    margin-top: 1rem;
+}
+
+dl{
+    padding: 1%;
+}
+
+.materialsIngredientsContentsText dt{
+    font-weight:500;
+}
+
+.materialsIngredientsContentsText dd{
+    margin: 0 1.25rem;
+    font-size: .85rem;
+    font-weight: 300;
+}
+
+a{
+    text-decoration: none;
+    color: #592B02;
+}
+
+/* ~OrderBooks Specific ~ Main Css */
+.heroImage{
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: auto; 
+    padding: 1rem 0;
+}
+
+.OrderBooks, #orderBooksTitle, #bookOrder{
+    display: block;
+    margin: auto;
+    justify-items: center;
+}
+
+#bookOrder{
+    width: 85%;
+    /* justify-items: center; */
+}
+
+#bookOrder fieldset{
+    width: 85%;
+}
+
+#bookOrder [type=submit] {
+    margin: .25rem 8rem;
+}
+
+.poBoxNumberLabel{
+    padding-top: .75rem;
+}
+
+/* ~Thanks Specific ~ Main Css */
+
+
+
+
+/* Footer - Central Header*/
+footer{
+    text-align: center;
+    padding-top: 5rem;
+    clear:both
+}
