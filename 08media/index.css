@@ -484,6 +484,57 @@ a{
     height: 40rem;
 }
 
+/* ~Helpful Tips Specific ~ Main Css */
+.fomContact{
+    columns: 2;
+    text-align: center;
+}
+
+.fomContact h3{
+    margin: .5rem 0;
+}
+
+.fomMap{
+    margin: 1rem 0;
+    display: block;
+}
+
+/* ~Helpful Tips Specific ~ table stuff here */
+table.subOrSpe, table.toolEpl{
+    width: 100%;
+    border-collapse: collapse;
+    
+}
+
+table.subOrSpe th, table.toolEpl th{
+    background-color: #022326;
+    color: white;
+    padding: .6rem 2%;
+    text-align: left;
+}
+
+table.subOrSpe td, table.toolEpl td{
+    color: #285059;
+    padding: .4rem 2%;
+}
+
+table.subOrSpe tr:nth-child(odd), table.toolEpl tr:nth-child(odd) {
+    background-color: #c2dee3;
+}
+
+table.subOrSpe tr:nth-child(even), table.toolEpl tr:nth-child(even) {
+    background-color: #a6cacd;
+}
+
+table.subOrSpe tr:hover, table.toolEpl tr:hover{
+    background-color: #d7d7d7;
+}
+
+h2{
+    padding-top: 2rem;
+}
+
+
 
 /* Footer - Central Header*/
 footer{
