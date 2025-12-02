@@ -13,6 +13,16 @@
     <link rel="stylesheet" href="index.css">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <title>SirCooksALot - Dinner Takes All</title>
+
+    <!-- Trying to import video additional code -->
+    <!-- keeping this here so maybe I can ask for help. Either from the professor or coding help office. I feel like there has to be a way to do it. I guess I just don't know how.
+    <link href="https://vjs.zencdn.net/7.2.3/video-js.css" rel="stylesheet">
+    <script src="https://vjs.zencdn.net/ie8/ie8-version/videojs-ie8.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-contrib-hls/5.14.1/videojs-contrib-hls.js"></script>
+    <script rel="modulepreload" ></script>
+    <link rel="modulepreload" as="script" crossorigin href="https://www.byutv.org/_nuxt/BelDbH-l.js"> -->
+
+
 </head>
 <body>
     <!-- start the page head -->
@@ -40,31 +50,62 @@
         <div class="dtaExplanation">
             <!-- Maybe later on I'll add an image over here to make it look nice and give it more of a vibe. I'm going to get all the bassic coding done first though. -->
             <!-- what it is -->
-            <p><strong>Dinner Takes All</strong> is an "all-new cooking game show where two families compete to see whose Dinner Takes All.(<a href="https://www.byutv.org/dta">BYUtv's Dinner Takes All main page</a> <!--quoting directly from their page on the summary. I am about 90% positive I did it right. If I didn't I'll fix it-->)" Where the two families compete between cooking a family dinner and playing games with the host.s</p>
+            <p><strong>Dinner Takes All</strong> is an "all-new cooking game show where two families compete to see whose Dinner Takes All.(<a href="https://www.byutv.org/dta" target="_blank">BYUtv's Dinner Takes All main page</a> <!--quoting directly from their page on the summary. I am about 90% positive I did it right. If I didn't I'll fix it-->)" Where the two families compete between cooking a family dinner and playing games with the host.s</p>
             <!-- why we were on it -->
             <p>My family was invited to be on <em>Dinner Takes All</em> by a family friend who works in the BYU media department. He mentioned they were doing a cooking show and asked if we wanted in. Obviously we did!</p>
             <!-- what we made -->
             <p>An important part of a cooking show is what did we make? My family made a classic Sunday dinner. We made seared tri-tip steak, siracha honey shrimp, potatoes with mushrooms and feta, brussel sprouts and chocolate chip cookies.</p>
         </div>
         <div>
-            <p class="videoExplanation">linked below is the dinner takes all trailer for Season Two and the episode my family and I were on.</p>
+            <p class="videosExplanation">Unfortunately I don't think I can iframe the episode my family was on so I will just link that page <a href="https://byutv.org/08287283-0b18-4e67-bccd-1a618fce0a52?utm_source=byub&utm_medium=share&utm_campaign=share_2025&utm_content=Episode" target="_blank">here</a> and put the trailer for the season my family is on below. Then if you and your family want to make the meal we made on the episode the different recipes will be linked below the video.</p>
             <div class="videos">
-                season two trailer
-                our episode
+                <!-- The Season Two trailer for 'Dinner Takes All' -->
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/h6OwsrIBWa4?si=vZ-R0Ra9qTHMw1K4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="dtaTrailerVideo"></iframe>
+
+                <!-- I want to also be able to link the episode my family and I are on. It is for free on BYUtv's website and you don't need a login. I tried a bunch of different ways to try and get it to link but the closest I got was using the embededUrl(https://www.byutv.org/playback/08287283-0b18-4e67-bccd-1a618fce0a52.m3u8) where it seemed to have loaded but then gave me a "forbidden"(403) error. I might try and go back to try again at another point in time but I have already put god knows how many hours into trying to get it to work and think I'll have to give up for now. I am going to leave what I think is the closest and just comment it out. -->
+                <!-- also you should check if they stream it anywhere else that you might have more access to -->
+                <!-- Option #1
+                <p>from after "embedUrl"</p>
+                works (I think) but gives a "forbidden" error. See if you can get around that. This might be where you try and figure something out with the youtube one as a guide
+                from part ["embedUrl":"https://www.byutv.org/playback/08287283-0b18-4e67-bccd-1a618fce0a52.m3u8"]
+                <iframe width="1080" height="608" src="https://www.byutv.org/playback/08287283-0b18-4e67-bccd-1a618fce0a52.m3u8" title="Season 2 Episode 7: Lewis Family vs. Santos Family" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+                <!-- This one also feels close
+                <p>embed with their share link</p>
+                <embed src="https://byutv.org/08287283-0b18-4e67-bccd-1a618fce0a52?utm_source=byub&utm_medium=share&utm_campaign=share_2025&utm_content=Episode" type="application/x-mpegURL"> -->
+                <!-- <p>attempt 3 ~ most confident</p>
+                <video id="DinnerTakesAll" class="video-js vjs-default-skin" controls preload="auto" width="1080" height="608">
+                    <source src="https://www.byutv.org/playback/08287283-0b18-4e67-bccd-1a618fce0a52.m3u8" type="application/x-mpegURL">
+                </video>
+                <script>
+                    var player = videojs('DinnerTakesAll');
+                    player.play();
+                </script> -->
             </div>
         </div>
-        <div>recipe boxes of dishes
-            get the formatting you used on the gallery page and then just label them as if they were the dishes from the show. Because I know my dad probably posted about it but I am kind of in a rush do I don't want to go find the pictures currently
+        <div class="dtaRecipeBoxes">
+            <figure class="galleryBox">
+                <img src="images/dinners/cookShowDinner.webp" alt="The dinner my family made on the BYU dinner takes all" height="400" width="405" loading="lazy" class="dtaGalleryImage">
+                <figcaption class="dishLabel">Seared Tri-tip Steak</figcaption>
+            </figure>
+            <figure class="galleryBox">
+                <img src="images/dinners/cookShowDinner.webp" alt="The dinner my family made on the BYU dinner takes all" height="400" width="405" loading="lazy" class="dtaGalleryImage">
+                <figcaption class="dishLabel">Siracha Honey Shrimp</figcaption>
+            </figure>
+            <figure class="galleryBox">
+                <img src="images/dinners/cookShowDinner.webp" alt="The dinner my family made on the BYU dinner takes all" height="400" width="405" loading="lazy" class="dtaGalleryImage">
+                <figcaption class="dishLabel">Potatoes with Mushrooms and Feta</figcaption>
+            </figure>
+            <figure class="galleryBox">
+                <img src="images/dinners/cookShowDinner.webp" alt="The dinner my family made on the BYU dinner takes all" height="400" width="405" loading="lazy" class="dtaGalleryImage">
+                <figcaption class="dishLabel">Brussel Sprouts</figcaption>
+            </figure>
+            <figure class="galleryBox">
+                <img src="images/dinners/cookShowDinner.webp" alt="The dinner my family made on the BYU dinner takes all" height="400" width="405" loading="lazy" class="dtaGalleryImage">
+                <figcaption class="dishLabel">Chocolate Chip Cookies</figcaption>
+            </figure>
         </div>
     </div>
-        
-        <!-- 
-        what this page is
-            -the little snipit on what dinner takes all is and some snipits on our experience
-        videos
-            link for the trailer on youtube
-            link for our episode
-        recipe boxes for the dishes we made -->
         
     </main>
     <!-- Start the page footer -->
